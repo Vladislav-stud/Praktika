@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+
+<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="body" style="height: 100%; width: 100%;">
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Создание задачи</h2>
+    <p>Заполните поля для создания задачи</p>
+      <form id="dataForm">
+        <input id="name" type="text" placeholder="Название задачи">
+          <br>
+          <br>
+          <br>
+          <input id="desc" type="text" placeholder="Описание задачи" style="height: 100px; widht: 200px;">
+          <input type="submit" style="height: 100px; widht: 200px;">
+
+      </form>
+
+  </div>
+</div>
+
+
+
+<div id="editModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Изменение задачи</h2>
+    <p>Заполните поля для изменения задачи</p>
+      <form id="editDataForm">
+          <h3></h3>
+        <input id="editName" type="text" placeholder="Название задачи">
+          <br>
+          <br>
+          <br>
+          <input id="editDesc" type="text" placeholder="Описание задачи" style="height: 100px; widht: 200px;">
+          <input type="submit" style="height: 100px; widht: 200px;">
+
+      </form>
+
+  </div>
+</div>
+
+
+
+
+  <main id="mainBlock">
+
+      <div class="note">
+        <button id="openModalBtn">Создание задачи</button>
+      </div>
+          <div id="outputBlock">
+              <div class="note">
+                   <button>Delete</button>
+              <h2>Заголовок первой карточки</h2>
+              <p>Это текст первой карточки. Здесь можно разместить любую информацию, которую вы хотите отобразить.  Вы можете использовать этот текст как пример и заменить его своим.</p>
+              <p>Можно добавить ещё больше текста, чтобы продемонстрировать как карточка адаптируется к разному количеству контента.</p>
+              </div>
+          </div>
+    </div>
+
+
+
+  </main>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>

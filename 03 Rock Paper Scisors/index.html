@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+
+<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="body" style="height: 100%; width: 100%;">
+<div id="wrapper" style="display: flex; width: 60%">
+  <main id="mainBlock">
+
+
+          <div id="outputBlock">
+              <div class="note">
+
+              <h2>Камень Ножницы бумага</h2>
+                  <button onclick="gamestart(this)" id="paper" class="rpsButton"><img class="rpsImg" src="img/paper-icon-grey.png"></button>
+                  <button onclick="gamestart(this)" id="rock" class="rpsButton"><img class="rpsImg" src="img/rock-icon-grey.png"></button>
+                  <button onclick="gamestart(this)" id="scissors" class="rpsButton"><img class="rpsImg" src="img/scissors-icon-grey.png"></button>
+              </div>
+
+              <div class="note">
+                  <h3>Ваш счёт:</h3>
+                  <h3 id="playerScore"></h3>
+              </div>
+          </div>
+
+
+
+
+
+  </main>
+<div id="computerBlock">
+              <div class="note">
+
+              <h2>Камень Ножницы бумага</h2>
+                  <div style="display: flex">
+                      <div class="computerButton" id="computerPaper"><img class="rpsImg" src="img/paper-icon-grey.png"></div>
+                      <div style="width: 4%;"></div>
+                      <div class="computerButton" id="computerRock"><img  class="rpsImg" src="img/rock-icon-grey.png"></div>
+                      <div style="width: 4%;"></div>
+                      <div class="computerButton" id="computerScissors"><img  class="rpsImg" src="img/scissors-icon-grey.png"></div>
+                  </div>
+              </div>
+
+    <div class="note">
+        <h3>Счёт компьютера:</h3>
+        <h3 id="computerScore"></h3>
+    </div>
+
+          </div>
+</div>
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>

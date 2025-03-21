@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+
+<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="body" style="height: 100%; width: 100%;">
+<div id="wrapper" style="display: flex; width: 60%">
+  <main id="mainBlock" style="display: flex;">
+    <div>
+
+      <input id="display" disabled type="text">
+
+              <div id="numpad">
+          <br>
+          <button onclick="button(this)">1</button> <button onclick="button(this)">2</button> <button onclick="button(this)">3</button>
+          <br>
+          <button onclick="button(this)">4</button> <button onclick="button(this)">5</button> <button onclick="button(this)">6</button>
+          <br>
+          <button onclick="button(this)">7</button> <button onclick="button(this)">8</button> <button onclick="button(this)">9</button>
+          <br>
+                            <button onclick="button(this)">0</button>
+              </div>
+        <br>
+        <div id="actions">
+          <button onclick="button(this)" class="actionButton">+</button> <button onclick="button(this)" class="actionButton">-</button>
+          <br>
+          <button onclick="button(this)"  class="actionButton">*</button> <button onclick="button(this)" class="actionButton">/</button>
+          <br>
+          <button onclick="calculate()"  class="actionButton">=</button> <button onclick="deleteNumbers()"  class="actionButton"><</button>
+
+        </div>
+
+    </div>
+
+
+  </main>
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>
